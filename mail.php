@@ -9,7 +9,7 @@ $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Сообщение с сайта AKtivPay";
+$title = "Сообщение с сайта AktivPay";
 foreach ($_POST as $key => $value) {
   if ($value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject") {
     $body .= "
@@ -32,9 +32,9 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'dogovor_service@aktivkredit.ru'; // Логин на почте
-  $mail->Password   = 'vdmchkgrrreqhcix'; // Пароль на почте
+  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
